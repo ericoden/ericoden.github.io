@@ -1,0 +1,20 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Posts"
+    url: /posts/
+  - title: "Github"
+    url: https://github.com/ericoden
+
+# Sidebar - displays under Author Profile
+my_sidebar:
+  - title: Archives
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/

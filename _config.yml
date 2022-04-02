@@ -36,6 +36,43 @@ plugins:
 
 github: [metadata]
 
+include:
+  - _pages
+
+author:
+  name  : "Eric Oden"
+  avatar  : "assets/images/fun_face.webp"
+  bio : "Math PhD Candidate"
+  location : "Washington, DC"
+  email : "ericjoden94@gmail.com"
+  github : "ericoden"
+  linkedin: "eric-oden-a92229135"  
+
+defaults:
+  # _posts
+  - scope:
+      path: "/posts/"
+      type: posts
+    values:
+      author_profile: true
+      sidebar:
+        nav: "my_sidebar"
+  #pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      author_profile: true
+
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/eric-oden-a92229135/"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ericoden"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
