@@ -33,6 +33,7 @@ minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-paginate-v2
 
 github: [metadata]
 
@@ -51,7 +52,7 @@ author:
 defaults:
   # _posts
   - scope:
-      path: "/posts/"
+      path: "/blog"
       type: posts
     values:
       author_profile: true
@@ -72,6 +73,9 @@ footer:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ericoden"
+
+paginate: 5
+paginate_path: /blog/page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
