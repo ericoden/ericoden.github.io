@@ -13,9 +13,15 @@ Developed an assistant for playing Wordle as a Python package (available to inst
 
 ## Text Prediction
 
-Developed a back-off model (a kind of n-gram model) for predicting the next word in a given sequence. Deployed as a Shiny [app](https://ericoden.shinyapps.io/text_prediction/).
+Developed a back-off model (a kind of n-gram model) for predicting the next word in a given sequence. Deployed as a Shiny [app].(https://ericoden.shinyapps.io/text_prediction/).
 
 ![shiny app demo](../assets/images/text_prediction_demo.gif)
+
+## Titanic Modeling
+
+Created a Streamlit app for developing a classification model for Kaggle's Titanic Classification challenge. Deployed as a Heroku [app](https://titanic-ericoden.herokuapp.com/)
+
+![titanic demo](../assets/images/titanic_demo.gif)
 
 ## Alchemy
 
