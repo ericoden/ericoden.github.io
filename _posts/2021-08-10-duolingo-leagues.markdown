@@ -9,7 +9,7 @@ layout: single
 $$\mathbf{x}_{n+1} = \mathbf{A}\mathbf{x}_n$$
 
 where $\mathbf{x}_i$ is the vector of population levels for each league in week
-$i$ and $\mathbf{A}$ is a [left-stochastic](https://en.wikipedia.org/wiki/Stochastic_matrix), tridiagonal matrix representing the transitions. Starting from a distribution where everyone is in the bottom three leagues, and assuming no one enters or leaves, we observe the existing transition rules push populations towards the higher leagues:
+$i$ and $\mathbf{A}$ is a tridiagonal, [left-stochastic](https://en.wikipedia.org/wiki/Stochastic_matrix) matrix representing the transitions. Starting from a distribution where everyone is in the bottom three leagues, and assuming no one enters or leaves, we observe the existing transition rules push populations towards the higher leagues:
 
 ![Alt Text](/assets/images/duolingo_population_evolution.webp)
 
