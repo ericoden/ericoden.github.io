@@ -19,14 +19,16 @@ A question I have: Can one construct a triadiagonal, irreducible left-stochastic
 
 One idea is to cast this as a constraint satisfaction problem. In particular, we can create the following formulation, where the decision variables, $a_{ij}$, are the entries of the matrix $\mathbf{A}$, $\mathbf{v}$ is the (given) dominant eigenvector, and $\epsilon > 0$ is a given minimum transition proportion:
 
-$\begin{align}
+$$
+\begin{align}
 &\sum_{j=1}^n a_{ij}v_j = v_i \quad \forall i \in \{1,\dots,n\} \\
 &\sum_{i=1}^n a_{ij} = 1 \quad \forall j \in \{1,\dots,n\} \\
 &a_{ij} =  0 \quad \forall i,j \in \{1,\dots,n\}, |i-j| > 1 \\
 &a_{ij} \ge \epsilon \quad \forall i,j \in \{1, \dots, n\}, |i-j| \le 1 \\
 &0 \le a_{ij} \le 1 \quad \forall i,j \in \{1, \dots, n\}
 \end{align}
-$
+$$
+
 Here, constraints (1) assert that $\mathbf{v}$ is an eigenvector of $\mathbf{A}$, with eigenvalue 1. Constraints (2) and (5) ensure that $\mathbf{A}$ is left-stochastic (by enforcing column sums to equal 1, and entries to be between 0 and 1). Constraints (3) limit our search to tridiagonal matrices. Constraints (4) enforce the matrix to be irreducible, by guaranteeing all elements on the tridiagonal are at least $\epsilon > 0$.
 
 Constraints (4) are a little bit of a hack. You don't need all elements on the tridiagonal to be strictly positive in order to guarantee irreducibility, and so we are cutting off feasible solutions. However, I haven't yet found a way to express the irreducibility with a linear constraint.
