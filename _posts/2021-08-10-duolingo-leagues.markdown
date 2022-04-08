@@ -33,6 +33,6 @@ Here, constraints (1) assert that $\mathbf{v}$ is an eigenvector of $\mathbf{A}$
 
 Constraints (4) are a little bit of a hack. You don't need all elements on the tridiagonal to be strictly positive in order to guarantee irreducibility, and so we are cutting off feasible solutions. However, I haven't yet found a way to express the irreducibility with a linear constraint.
 
-However, with $\epsilon$ set to 0.01, for a given $\mathbf{v}$, CPLEX was able to find a solution. I set a target distribution 5% for the bottom five leagues, 10% for the emerald and amythest, 20% for pearl, 30% for obsidian, and 5% for diamond, and got the following transition probabilities. The resulting transition matrix then leads a random distribution towards the target. The convergence, however, is rather slow (it takes 3500 weeks to get there):
+However, with $\epsilon$ set to 0.01, for a given $\mathbf{v}$, CPLEX was able to find a solution. I set a target distribution 5% for the bottom five leagues, 10% for the emerald and amythest, 20% for pearl, 30% for obsidian, and 5% for diamond. The resulting transition matrix then leads a random distribution towards the target. The convergence, however, is rather slow (it takes 3500 weeks to get there):
 
 ![Alt Text](/assets/images/duolingo_targeted.gif)
