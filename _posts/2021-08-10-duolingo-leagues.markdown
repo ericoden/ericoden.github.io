@@ -21,11 +21,11 @@ One idea is to cast this as a constraint satisfaction problem. In particular, we
 
 $$
 \begin{align}
-&\sum_{j=1}^n a_{ij}v_j = v_i \quad \forall i \in \{1,\dots,n\} \\
-&\sum_{i=1}^n a_{ij} = 1 \quad \forall j \in \{1,\dots,n\} \\
-&a_{ij} =  0 \quad \forall i,j \in \{1,\dots,n\}, |i-j| > 1 \\
-&a_{ij} \ge \epsilon \quad \forall i,j \in \{1, \dots, n\}, |i-j| \le 1 \\
-&0 \le a_{ij} \le 1 \quad \forall i,j \in \{1, \dots, n\}
+\sum_{j=1}^n a_{ij}v_j &= v_i \quad &\forall i \in \{1,\dots,n\} \\
+\sum_{i=1}^n a_{ij} &= 1 \quad &\forall j \in \{1,\dots,n\} \\
+a_{ij} &=  0 \quad &\forall i,j \in \{1,\dots,n\}, |i-j| > 1 \\
+a_{ij} &\ge \epsilon \quad &\forall i,j \in \{1, \dots, n\}, |i-j| \le 1 \\
+0 \le a_{ij} &\le 1 \quad &\forall i,j \in \{1, \dots, n\}
 \end{align}
 $$
 
