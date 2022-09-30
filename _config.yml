@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website for blogging/projects/etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ericoden.com" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: 
-github_username:  ericoden
+#twitter_username:
+github_username: ericoden
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
@@ -41,13 +41,13 @@ include:
   - _pages
 
 author:
-  name  : "Eric Oden"
-  avatar  : "assets/images/fun_face.webp"
-  bio : "Math PhD Candidate"
-  location : "Washington, DC"
-  email : "ericjoden94@gmail.com"
-  github : "ericoden"
-  linkedin: "eric-oden-a92229135"  
+  name: "Eric Oden"
+  avatar: "assets/images/fun_face.webp"
+  bio: "Research Scientist @ Upstart"
+  location: "Washington, DC"
+  email: "ericjoden94@gmail.com"
+  github: "ericoden"
+  linkedin: "eric-oden-a92229135"
 
 defaults:
   # _posts
@@ -76,7 +76,6 @@ footer:
 
 paginate: 5
 paginate_path: /blog/page:num/
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
