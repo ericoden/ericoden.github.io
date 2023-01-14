@@ -5,6 +5,8 @@ main:
     url: /contact/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Self Study"
+    url: /self_study/
   - title: "Github"
     url: https://github.com/ericoden
 

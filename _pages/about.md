@@ -5,4 +5,4 @@ permalink: /about/
 author_profile: true
 ---
 
-I work as a Machine Learning Research Scientist at Upstart.
+I am a Machine Learning Research Scientist at Upstart.
