@@ -14572,7 +14572,24 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>TODO:</p>
+<ul>
+<li><h1 id="6:-Add-prediction-intervals">6: Add prediction intervals<a class="anchor-link" href="#6:-Add-prediction-intervals">&#182;</a></h1></li>
+<li><h1 id="7:-Finish">7: Finish<a class="anchor-link" href="#7:-Finish">&#182;</a></h1></li>
+<li><h1 id="11">11<a class="anchor-link" href="#11">&#182;</a></h1></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14646,7 +14663,7 @@ and, by properties of the trace operator:
 <p>Since $Q$ is idempotent, its eigenvalues can only be 0 or 1, since, for any eigenpair $(\lambda, v)$, we have</p>
 $$\lambda v = Qv = Q^2v = \lambda^2 v \Rightarrow \lambda = \lambda^2.$$<p>Since the trace of a matrix is the sum of its eigenvalues (counting multiplicities), it must be the case that 1 is a eigenvalue with multiplicity $n - k$ and 0 is an eigenvalue with multiplicity $k$.</p>
 <p>Since $Q$ is real and symmetric, it is normal (i.e., it commutes with its conjugate transpose). Then, by the spectral theorem, it is unitarily diagonalizable. That is, there exists a unitary $U$ such that:</p>
-$$U^TQU = D = \text{diag}(\underbrace{1,\dots,1}_{n-k \text{ times}},\underbrace{0,\dots,0}_{k \text{ times}}).$$<p>Let $K = U^T \hat{\epsilon}$. Since $U$ is unitary, it is an isometry with respect to the usual norm. Thus, $||K||^2 = ||U^T \hat{\epsilon} || ^2 = ||\hat{\epsilon}||^2 = \sum_{i=1}^n \hat{\epsilon}_i^2$.</p>
+$$U^TQU = D = \text{diag}(\underbrace{1,\dots,1}_{n-k \text{ times}},\underbrace{0,\dots,0}_{k \text{ times}}).$$<p>Let $K = U^T \hat{\epsilon}$. Since $U$ is unitary, so is $U^T$, and because $U^T$ is unitary, it is an isometry with respect to the usual norm. Thus, $||K||^2 = ||U^T \hat{\epsilon} || ^2 = ||\hat{\epsilon}||^2 = \sum_{i=1}^n \hat{\epsilon}_i^2$.</p>
 <p>Meanwhile, since $\epsilon \sim N(0, \sigma^2)$, $\hat{\epsilon} \sim N(0, \sigma^2 Q)$, and $K \sim N(0, \sigma^2 D)$ (cf. <a href="https://stats.stackexchange.com/a/481387">this answer</a>). Thus, $K_{n-k+1} = \dots = K_n = 0$, and $||K||^2 / \sigma^2$ is a sum of $n-k$ independent standard normal random variables. That is, $||K||^2 / \sigma^2 \sim \chi^2_{n-k}.$ Thus,</p>
 $$\frac{\sum_{i=1}^n \hat{\epsilon}_i^2}{\sigma^2} \sim \chi^2_{n-k},$$<p>and, taking expectation, we have</p>
 $$\mathbb{E}(\hat{\sigma}^2) = \mathbb{E} \left[ \frac{\sum_{i=1}^n \hat{\epsilon}_i^2}{n-k} \right] = \sigma^2.$$<p>We don't need normality of the error terms. Since $\text{Var}(\epsilon) = \sigma^2$, $\text{Var}(\hat{\epsilon}) = \text{Var}(Q\epsilon) = Q^T \sigma^2 Q = Q \sigma^2$, and $\text{Var}(K) = \text{Var}(U^T \hat{\epsilon}) = \sigma^2 U^TQU = \sigma^2D$. Meanwhile. $\mathbb{E}(K) = 0$. Thus, $||K||^2 / \sigma^2$ is the sum of the squares of $n-k$ independent random variables, each with expectation 0 and variance 1. The expectation of such a random variable is $n-k$.</p>
@@ -14778,7 +14795,7 @@ $$\text{bias}(\hat{R}_{\text{tr}}(S)) = E(\hat{R}_{\text{tr}}(S)) - R(S) = -2 \s
 \begin{align*}
     V(\hat{\delta}) &amp;= V(\hat{\beta}_1) + 17^2 V(\hat{\beta}_0) \\
         &amp;= \frac{\sigma^2}{ns_X^2} + \frac{17^2 \sigma^2 \sum_i X_i^2}{n^2s_X^2}.
-\end{align*}<p>Therefore the estimated standard error is:</p>
+\end{align*}<p>Therefore the standard error is:</p>
 \begin{align*}
 \frac{\sigma}{\sqrt{n} s_X} \sqrt{1 +  17^2 \sum_i X_i^2}
 \end{align*}<p>and the Wald test rejects the null hypothesis if the absolute value of</p>
@@ -14856,7 +14873,7 @@ $$W = \frac{\hat{\beta}_1 - 17 \hat{\beta}_0}{\frac{\sigma}{\sqrt{n} s_X} \sqrt{
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100  4027  100  4027    0     0   8135      0 --:--:-- --:--:-- --:--:--  8118
+100  4027  100  4027    0     0  17897      0 --:--:-- --:--:-- --:--:-- 17897
 </pre>
 </div>
 </div>
@@ -15284,7 +15301,7 @@ gallon) from the other variables. Summarize your analysis.</p>
 models try (i) forward stepwise, (ii) backward stepwise. Summarize your
 findings.</p>
 <p>(c) Use the Zheng-Loh model selection method and compare to (b).</p>
-<p>(d) Perform all possible regressions. Compare Cp and BIC. Compare the
+<p>(d) Perform all possible regressions. Compare $C_p$ and $\text{BIC}$. Compare the
 results.</p>
 
 </div>
@@ -15331,7 +15348,7 @@ results.</p>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100  4027  100  4027    0     0  10143      0 --:--:-- --:--:-- --:--:-- 10143
+100  4027  100  4027    0     0  27209      0 --:--:-- --:--:-- --:--:-- 27026
 </pre>
 </div>
 </div>
@@ -15428,6 +15445,254 @@ results.</p>
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="8">8<a class="anchor-link" href="#8">&#182;</a></h1><p>Assume a linear regression model with Normal errors. Take $\sigma$ known. Show that the model with highest AIC (equation (13.27)) is the model with the lowest Mallows $C_p$ statistic.</p>
+<p><em>Solution</em>:</p>
+<p>The Akaike Information Criterion (AIC) is:</p>
+<p>$\mathcal{l}_S - |S|$</p>
+<p>where $\mathcal{l}_S$ is the log-likelihood of the model evaluated at the MLE, and $S$ is a subset of the covariates.</p>
+<p>The likelihood of a linear regression model with normal errors is</p>
+$$\mathcal{L}_S = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left[-\frac{1}{2}\left( \frac{\hat{Y}_i(S) - Y_i}{\sigma}\right)^2\right]$$<p>where $\hat{Y}_i(S)$ is the predicted value of observation $i$ by the model, and $Y_i$ the actual value. The log-likelihood is then</p>
+$$\mathcal{l}_S = n \log\left[\frac{1}{\sqrt{2 \pi \sigma^2}}\right] - \frac{1}{2\sigma^2}\sum_{i=1}^n (\hat{Y}_i(S) - Y_i)^2.$$<p>The AIC is then</p>
+$$-\frac{1}{2\sigma^2}\sum_{i=1}^n (\hat{Y}_i(S) - Y_i)^2 - |S| + C$$<p>where $C$ is a constant that doesn't depend on the model. The maximizer of the above will minimize:</p>
+$$\sum_{i=1}^n (\hat{Y}_i(S) - Y_i)^2 + 2 |S| \sigma^2$$<p>which is Mallow's $C_p$ statistic.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="9">9<a class="anchor-link" href="#9">&#182;</a></h1><p>In this question we will take a closer look at the AIC method. Let $X_1, \dots, X_n$ be IID observations. Consider two models $\mathcal{M}_0$ and $\mathcal{M}_1$. Under $\mathcal{M}_0$ the data are assumed to be $N(0,1)$ while under $\mathcal{M}_1$ the data are assumed to be $N(\theta, 1)$ for some unknown $\theta \in \mathbb{R}$:</p>
+$$\mathcal{M}_0 : X_1, \dots, X_n \sim N(0, 1)$$$$\mathcal{M}_1 : X_1, \dots, X_n \sim N(\theta, 1), \theta \in \mathbb{R}.$$<p>This is just another way to view the hypothesis testing problem: $H_0 : \theta = 0$ versus $H_1 : \theta \ne 0$. Let $\mathcal{l}_n(\theta)$ be the log-likelihood function. The AIC score for a model is the log-likelihood at the MLE minus the number of parameters. (Some people multiply this score by 2 but that is irrelevant.) Thus, the AIC score for $\mathcal{M}_0$ is $AIC_0 = \mathcal{l}_n(0)$ and the AIC score for $\mathcal{M}_1$ is $AIC_1 = \mathcal{l}_n(\hat{\theta}) - 1$. Suppose we choose the model with the highest AIC score. Let $J_n$ denote the selected model:</p>
+$$
+J_n = \begin{cases} 
+        0 &amp; \text{if } AIC_0 &gt; AIC_1 \\
+        1 &amp; \text{if } AIC_1 &gt; AIC_0.
+\end{cases}
+$$<p>(a) Suppose that $\mathcal{M}_0$ is the true model, i.e., $\theta = 0$. Find</p>
+$$\lim_{n\to\infty} \mathbb{P}(J_n = 0).$$<p>Now compute $\lim_{n\to\infty} \mathbb{P}(J_n = 0)$ when $\theta \ne 0$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Recall the likelihood for the normal distribution:</p>
+\begin{align*}
+    \mathcal{L}_n(\mu, \sigma) &amp;= \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left[ - \frac{1}{2} \left( \frac{X_i - \mu}{\sigma} \right)^2 \right],
+\end{align*}<p>whence we get the log-likelihood:</p>
+\begin{align*}
+    \mathcal{l}_n(\mu, \sigma) &amp;= - \frac{n}{2} \log \left(2 \pi\right) - \frac{1}{2\sigma^2} \sum_{i=1}^n (X_i - \mu)^2.
+\end{align*}<p>So,</p>
+\begin{align*}
+    \mathcal{l}_n(0) &amp;= - \frac{n}{2} \log \left(2 \pi\right) - \frac{1}{2} \sum_{i=1}^n X_i^2,
+\end{align*}<p>and</p>
+\begin{align*}
+    \mathcal{l}_n(\hat{\theta}) &amp;= \mathcal{l}_n(\bar{X}) \\
+        &amp;= - \frac{n}{2} \log \left(2 \pi\right) - \frac{1}{2} \sum_{i=1}^n (X_i - \bar{X})^2.
+\end{align*}<p>Therefore,</p>
+\begin{align*}
+    \mathbb{P}(J_n = 0) &amp;= \mathbb{P}(AIC_0 &gt; AIC_1) \\
+        &amp;= \mathbb{P}(\mathcal{l}_n(0) &gt; \mathcal{l}_n(\hat{\theta}) - 1) \\
+        &amp;= \mathbb{P}(\mathcal{l}_n(\hat{\theta}) - \mathcal{l}_n(0) &lt; 1) \\
+        &amp;= \mathbb{P} \left( \sum_{i=1}^n X_i^2 - \sum_{i=1}^n ( X_i^2 - 2 \bar{X}X_i  + \bar{X}^2) &lt; 2  \right) \\
+        &amp;= \mathbb{P} \left( 2n\bar{X}^2 - n\bar{X}^2 &lt; 2 \right) \\
+        &amp;= \mathbb{P} \left( -\sqrt{\frac{2}{n}} &lt; \bar{X} &lt; \sqrt{\frac{2}{n}} \right).
+\end{align*}<p>Since $\left\{X_i\right\}_{i=1}^n$ are IID and normally distributed with variance 1, $\bar{X}$ is also normally distributed, with mean 0 and variance $\frac{1}{n}$ (Theorem 3.17). Hence:</p>
+\begin{align*}
+    \mathbb{P}(J_n = 0) &amp;= \mathbb{P} \left( -\sqrt{n}\sqrt{\frac{2}{n}} &lt; \frac{\bar{X} - 0}{\sqrt{1 / n}} &lt; \sqrt{n}\sqrt{\frac{2}{n}} \right) \\
+        &amp;= \mathbb{P} \left( -\sqrt{2} &lt; Z &lt; \sqrt{2} \right) \\
+        &amp;= \Phi(\sqrt{2}) - \Phi(-\sqrt{2}) \approx 0.843.
+\end{align*}<p>The result holds for all $n \in \mathbb{Z}^+$, and also in the limit.</p>
+<p>If $\theta \ne 0$, then the mean of $\bar{X}$ is $\theta$, and</p>
+\begin{align*}
+    \mathbb{P}(J_n = 0) &amp;= \mathbb{P} \left( -\sqrt{n}\left(\sqrt{\frac{2}{n}} - \theta\right) &lt; \frac{\bar{X} - \theta}{\sqrt{1 / n}} &lt; \sqrt{n}\left(\sqrt{\frac{2}{n}}-\theta\right) \right) \\
+        &amp;= \mathbb{P} \left( -\sqrt{2} - \sqrt{n}\theta &lt; Z &lt; \sqrt{2} - \sqrt{n}\theta \right) \\
+        &amp;= \Phi(\sqrt{2} - \sqrt{n}\theta) - \Phi(-\sqrt{2} - \sqrt{n}\theta)
+\end{align*}<p>Since 
+$$
+\lim_{n\to\infty} \Phi(\sqrt{2} - \sqrt{n}\theta) = \lim_{n\to\infty} \Phi(-\sqrt{2} - \sqrt{n}\theta) = 
+\begin{cases}
+0 \text{ if } \theta &gt; 0 \\
+1 \text{ if } \theta &lt; 0,
+\end{cases}
+$$</p>
+<p>$\lim_{n\to\infty} \mathbb{P}(J_n = 0) = 0$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>(b) The fact that $\lim_{n\to\infty} \mathbb{P}(J_n = 0) \ne 1$ when $\theta = 0$ is why some people say that AIC &quot;overfits.&quot; But this is not quite true as we shall now see. Let $\phi_{\theta}(x)$ denote a normal density function with mean $\theta$ and variance 1. Define</p>
+$$ 
+\hat{f}_n(x) = 
+    \begin{cases}
+        \phi_0(x) &amp;\text{ if } J_n = 0 \\
+        \phi_{\hat{\theta}}(x) &amp;\text{ if } J_n = 1.
+    \end{cases}
+$$<p>If $\theta = 0$, show that $D(\phi_0, \hat{f}_n) \xrightarrow{P} 0$ as $n \to \infty$ where</p>
+$$D(f, g) = \int f(x) \log \left( \frac{f(x)}{g(x)} \right) \, dx$$<p>is the Kullback-Leibler distance. Show also that $D(\phi_{\theta}, \hat{f}_n) \to 0$ if $\theta \ne 0$. Hence, AIC consistently estimates the true density even if it &quot;overshoots&quot; the correct model.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><em>Solution</em>:</p>
+<p>We have</p>
+\begin{align*}
+    D(\phi_{\theta}, \hat{f}_n) &amp;= \int \phi_{\theta}(x) \log \left( \frac{\phi_{\theta}(x)}{\hat{f}_n} \right) \, dx \\
+        &amp;= \int \phi_{\theta}(x) \left( \log(\phi_{\theta}(x)) - \log(\hat{f}_n(x)) \right) \, dx \\
+        &amp;= \int \phi_0(z) \left(\log(\phi_0(z) - \log(\hat{f}_n(z + \theta)) \right) \, dx \tag{$z = x - \theta$}\\
+        &amp;= \mathbb{E}\left[\log(\phi_{0}(Z)) -  \log(\hat{f}_n(Z + \theta))\right]. \tag{$Z \sim N(0,1)$} \\
+\end{align*}<p>Let $\mu =\hat{\theta}\mathbb{1}_{J_n = 1}$. Note that:</p>
+\begin{align*}
+    \log(\phi_0(x)) -  \log(\hat{f}_n(x + \theta)) &amp;= \left(\frac{1}{\sqrt{2\pi}} - \frac{x^2}{2}\right) - \left(\frac{1}{\sqrt{2\pi}} - \frac{(x + \theta - \mu)^2}{2} \right) \\
+        &amp;= - \frac{1}{2} \left( x^2 - (x + (\theta - \mu))^2 \right) \\
+        &amp;= \frac12 \left((\mu - \theta)^2 - 2(\mu - \theta)x\right)
+\end{align*}<p>Therefore,</p>
+\begin{align*}
+    D(\phi_\theta, \hat{f}_n) &amp;= \frac12 \mathbb{E}\left[(\mu - \theta)^2 - 2(\mu - \theta) Z\right] \\
+        &amp;= \frac{(\mu - \theta)^2}{2}.
+\end{align*}
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Suppose $\theta = 0$. Then, $D(\phi_{0}, \hat{f}_n) = \frac{\mu^2}{2}$. Let $\epsilon &gt; 0$. We have:</p>
+\begin{align*}
+    \mathbb{P}\left(\frac{\mu^2}{2} &gt; \epsilon\right) &amp;= \mathbb{P} 
+            \left((\hat{\theta}\mathbb{1}_{J_n = 1})^2 &gt; \frac{\epsilon}{2} \right) \\
+            &amp;\le \mathbb{P} \left( |\hat{\theta}| &gt; \sqrt{\frac{\epsilon}{2}} \right) \\
+            &amp;= \mathbb{P} \left( \left|\frac{\hat{\theta}}{1 / \sqrt{n}}\right| &gt; \sqrt{n}\sqrt{\frac{\epsilon}{2}} \right) \\
+            &amp;= \mathbb{P} \left( |Z| &gt; \sqrt{\frac{n \epsilon }{2}}\right) \tag{Since $\theta = 0$, $\hat{\theta} \sim N(0, 1 / n)$}\\
+            &amp;= 2 \Phi \left( - \sqrt{ \frac{n \epsilon}{2}} \right) \to 0.
+\end{align*}<p>Thus, $D(\phi_0, \hat{f}_n) \xrightarrow{P} 0$.</p>
+<p>Now suppose $\theta \ne 0$. Then, $D(\phi_{\theta}, \hat{f}_n) = (\mu - \theta)^2 / 2$. By the Weak Law of Large Numbers, $\hat{\theta} = \bar{X} \xrightarrow{P}  \theta$. By the work in part (a), $\mathbb{1}_{J_n = 1} \xrightarrow{P} 1$. Thus, by Theorem 5.5d, $\mu = \hat{\theta}\mathbb{1}_{J_n = 1} \xrightarrow{P} \theta$. Finally, by Theorems 5.5a and 5.5f, $(\mu - \theta)^2 / 2 \xrightarrow{P} 0$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>(c) Repeat this analysis for the BIC which is the log-likelihood minus $(p/2) \log n$ where $p$ is the number of parameters and $n$ is sample size.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In this case, $\text{BIC}_0 = \mathcal{l}_n(0)$ and $\text{BIC}_1 = \mathcal{l}_n(\hat{\theta}) - \frac{\log n}{2}$. The calculation of $\mathbb{P}(J_n = 0)$ follows the same steps, and, if $\theta = 0$, we get:</p>
+$$\mathbb{P}(J_n = 0) = \Phi(\sqrt{\log n}) - \Phi(-\sqrt{\log n}) \rightarrow 1,$$<p>and if $\theta \ne 0$, we get</p>
+$$\mathbb{P}(J_n = 0) = \Phi(\sqrt{\log n} - \sqrt{n}\theta) - \Phi(-\sqrt{\log n} - \sqrt{n}\theta) \rightarrow 0.$$<p>The Kullback-Leibler divergence calculations are exactly as before.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="10">10<a class="anchor-link" href="#10">&#182;</a></h1><p>In this question we take a closer look at prediction intervals. Let $\theta = \beta_0 + \beta_1 X_*$ and let $\hat{\theta} = \hat{\beta}_0 + \hat{\beta}_1 X_*$. Thus, $\hat{Y}_*  = \hat{\theta}$ while $Y_* = \theta + \epsilon$. Now, $\hat{\theta} \approx N(\theta, \text{se}^2)$ where</p>
+$$\text{se}^2 = V(\hat{\theta}) = V(\hat{\beta}_0 + \hat{\beta}_1 x_*).$$<p>Note that $V(\hat{\theta})$ is the same as $V(\hat{Y}_*)$. Now, $\hat{\theta} \pm 2 \sqrt{V(\hat{\theta})}$ is an approximate 95 percent confidence interval for $\theta = \beta_0 + \beta_1 x_*$ using the usual argument for a confidence interval. But, as you shall now show, it is not a valid confidence interval for $Y_*$.</p>
+<p>(a) Let $s = \sqrt{V(\hat{Y}_*)}$. Show that</p>
+\begin{align*}
+    \mathbb{P}(\hat{Y}_* - 2s &lt; Y_* &lt; \hat{Y}_* + 2s) &amp;\approx \mathbb{P} \left(-2 &lt; N \left(0, 1 + \frac{\sigma^2}{s^2}\right) &lt; 2 \right) \\
+    &amp;\ne  0.95
+\end{align*}<p><em>Solution</em>:</p>
+<p>Observe
+\begin{align*}
+    \mathbb{P}(\hat{Y}_* - 2s &lt; Y_* &lt; \hat{Y}_* + 2s) &amp;= \mathbb{P}\left(-2 &lt; \frac{Y_* - \hat{Y}_*}{s} &lt; 2\right)
+\end{align*}
+and that
+\begin{align*}
+\frac{Y_* - \hat{Y}_*}{s} &amp;= \frac{\theta - \hat{\theta}}{s} + \frac{\epsilon}{s}.
+\end{align*}</p>
+<p>Note that $\hat{\theta}$ and $\epsilon$ are independent, since $\hat{\theta}$ depends only on the training data. Thus, the above quantities converges in distribution to a normal distribution with mean 0 and variance $1 + \frac{\sigma^2}{s^2}$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>(b) The problem is that the quantity of interest $Y_*$ is equal to a parameter $\theta$ plus a random variable. We can fix this by defining</p>
+$$\xi_n^2 = V(\hat{Y}_*) + \sigma^2 = \left[ \frac{\sum_i (x_i - x_*)^2}{n\sum_i (x_i - \bar{x})^2} + 1 \right]\sigma^2.$$<p>In practice, we substitute $\hat{\sigma}$ for $\sigma$ and we denote the resulting quantity by $\hat{xi}_n$. Now consider the interval $\hat{Y}_* \pm 2 \hat{\xi_n}$. Show that</p>
+$$\mathbb{P}(\hat{Y}_* - 2 \hat{\xi}_n &lt; Y_* &lt; \hat{Y}_* + 2 \hat{\xi}_n) \approx \mathbb{P}(-2 &lt; N(0,1) &lt; 2) \approx 0.95.$$<p><em>Solution</em>:</p>
+<p>Observe:</p>
+\begin{align*}
+\mathbb{P}(\hat{Y}_* - 2 \hat{\xi}_n &lt; Y_* &lt; \hat{Y}_* + 2 \hat{\xi}_n) &amp;= \mathbb{P}\left( -2 &lt; \frac{Y_* - \hat{Y}_*}{\hat{\xi}_n} &lt; 2\right)
+\end{align*}<p>and that</p>
+\begin{align*}
+\frac{Y_* - \hat{Y}_*}{\hat{\xi}_n} &amp;= \frac{\theta - \hat{\theta} + \epsilon}{\sqrt{s^2 + \sigma^2}} \\
+        &amp;= \frac{\theta - \hat{\theta}}{s} \frac{s}{\sqrt{s^2 + \sigma^2}} + \frac{\epsilon}{\sigma} \frac{\sigma}{\sqrt{s^2 + \sigma^2}} \\
+        &amp;\leadsto N \left(0, \frac{s^2}{s^2 + \sigma^2}\right) + N\left(0, \frac{\sigma^2}{s^2 + \sigma^2} \right) = N(0, 1).
+\end{align*}
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="11">11<a class="anchor-link" href="#11">&#182;</a></h1><p>Get the Coronary Risk-Factor Study (CORIS) data from the book web site. Use backward stepwise logistic regression based on AIC to select a model. Summarize your results.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
