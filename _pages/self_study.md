@@ -21,3 +21,5 @@ My solutions to textbook exercises.
 10 - [Hypothesis Testing and $p$-values](/self_study/all_of_statistics/ch_10_hypothesis_testing_and_p-values.html) \
 11 - [Bayesian Inference](/self_study/all_of_statistics/ch_11_bayesian_inference.html) \
 12 - [Statistical Decision Theory](/self_study/all_of_statistics/ch_12_statistical_decision_theory.html) \
+13 - [Linear and Logistic Regression](/self_study/all_of_statistics/ch_13_linear_and_logistic_regression.html) \
+14 - [Multivariate Models](/self_study/all_of_statistics/ch_14_multivariate_models.html)
