@@ -23,3 +23,5 @@ My solutions to textbook exercises.
 12 - [Statistical Decision Theory](/self_study/all_of_statistics/ch_12_statistical_decision_theory.html) \
 13 - [Linear and Logistic Regression](/self_study/all_of_statistics/ch_13_linear_and_logistic_regression.html) \
 14 - [Multivariate Models](/self_study/all_of_statistics/ch_14_multivariate_models.html)
+15 - [Inference about Independence](/self_study/all_of_statistics/ch_15_inference_about_independence.html)
+16 - [Causal Inference](/self_study/all_of_statistics/ch_16_causal_inference.html)
