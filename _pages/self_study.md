@@ -29,4 +29,5 @@ My solutions to textbook exercises.
 18 - Undirected Graphs \
 19 - Log-Linear Models \
 20 - [Nonparametric Curve Estimation](/self_study/all_of_statistics/ch_20_nonparametric_curve_estimation.html) \
-21 - [Smoothing Using Orthogonal Functions](/self_study/all_of_statistics/ch_21_smoothing_using_orthogonal_functions.html)
+21 - [Smoothing Using Orthogonal Functions](/self_study/all_of_statistics/ch_21_smoothing_using_orthogonal_functions.html) \
+22 - [Classification](/self_study/all_of_statistics/ch_22_classification.html)
