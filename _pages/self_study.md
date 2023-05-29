@@ -30,4 +30,6 @@ My solutions to textbook exercises.
 19 - Log-Linear Models \
 20 - [Nonparametric Curve Estimation](/self_study/all_of_statistics/ch_20_nonparametric_curve_estimation.html) \
 21 - [Smoothing Using Orthogonal Functions](/self_study/all_of_statistics/ch_21_smoothing_using_orthogonal_functions.html) \
-22 - [Classification](/self_study/all_of_statistics/ch_22_classification.html)
+22 - [Classification](/self_study/all_of_statistics/ch_22_classification.html) \
+23 - [Stochastic Processes](/self_study/all_of_statistics/ch_23_probability_redux_stochastic_processes.html)
+24 - [Simulation Methods]
