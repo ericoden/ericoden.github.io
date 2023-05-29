@@ -25,11 +25,11 @@ My solutions to textbook exercises.
 14 - [Multivariate Models](/self_study/all_of_statistics/ch_14_multivariate_models.html) \
 15 - [Inference about Independence](/self_study/all_of_statistics/ch_15_inference_about_independence.html) \
 16 - [Causal Inference](/self_study/all_of_statistics/ch_16_causal_inference.html) \
-17 - Directed Graphs and Conditional Independence \
-18 - Undirected Graphs \
-19 - Log-Linear Models \
+17 - [Directed Graphs and Conditional Independence](/self_study/all_of_statistics/ch_17_directed_graphs_and_conditional_independence.html) \
+18 - [Undirected Graphs](/self_study/all_of_statistics/ch_18_undirected_graphs.html) \
+19 - [Log-Linear Models](/self_study/all_of_statistics/ch_19_log_linear_models.html) \
 20 - [Nonparametric Curve Estimation](/self_study/all_of_statistics/ch_20_nonparametric_curve_estimation.html) \
 21 - [Smoothing Using Orthogonal Functions](/self_study/all_of_statistics/ch_21_smoothing_using_orthogonal_functions.html) \
 22 - [Classification](/self_study/all_of_statistics/ch_22_classification.html) \
-23 - [Stochastic Processes](/self_study/all_of_statistics/ch_23_probability_redux_stochastic_processes.html)
-24 - [Simulation Methods]
+23 - [Stochastic Processes](/self_study/all_of_statistics/ch_23_probability_redux_stochastic_processes.html) \
+24 - [Simulation Methods](/self_study/all_of_statistics/ch_24_simulation_methods.html)
