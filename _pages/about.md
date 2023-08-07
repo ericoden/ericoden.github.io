@@ -5,4 +5,4 @@ permalink: /about/
 author_profile: true
 ---
 
-Machine Learning Research Scientist at Upstart.
+Senior Machine Learning Research Scientist at Upstart.
