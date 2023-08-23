@@ -43,8 +43,7 @@ include:
 author:
   name: "Eric Oden"
   avatar: "assets/images/fun_face.webp"
-  bio: "Research Scientist @ Upstart"
-  location: "Washington, DC"
+  bio: "Senior Research Scientist @ Upstart"
   email: "ericjoden94@gmail.com"
   github: "ericoden"
   linkedin: "eric-oden-a92229135"
@@ -69,7 +68,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/eric-oden-a92229135/"
+      url: "https://www.linkedin.com/in/ericoden/"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ericoden"
