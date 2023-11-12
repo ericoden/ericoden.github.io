@@ -33,3 +33,8 @@ My solutions to textbook exercises.
 22 - [Classification](/self_study/all_of_statistics/ch_22_classification.html) \
 23 - [Stochastic Processes](/self_study/all_of_statistics/ch_23_probability_redux_stochastic_processes.html) \
 24 - [Simulation Methods](/self_study/all_of_statistics/ch_24_simulation_methods.html)
+
+### [Reinforcement Learning](https://mitpress.mit.edu/9780262039246/reinforcement-learning/) by Richard S. Sutton and Andrew G. Barto
+
+2 - [Multi-armed Bandits](/self_study/reinforcement_learning/ch_02_multi-armed_bandits.html) \
+3 - Finite Markov Decision Processes
