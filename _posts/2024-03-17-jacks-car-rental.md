@@ -77,6 +77,6 @@ The code is available in [this notebook](https://github.com/ericoden/ericoden.gi
 
 ### Comments
 
-- This is a "model-based" approach, as we need to know the transition probabilities $p(s', r | s, a)$ to solve the problem. These values may be unknown or too multitudinous to compute in practice. Indeed, even in this toy problem, the most expensive step was construction of this table. For this reason, much of the book is devoted to "model-free" approaches, which do not require knowledge of the transition probabilities.
+- This is a "model-based" approach, as we need to know the transition probabilities $p(s', r \mid s, a)$ to solve the problem. These values may be unknown or too multitudinous to compute in practice. Indeed, even in this toy problem, the most expensive step was construction of this table. For this reason, much of the book is devoted to "model-free" approaches, which do not require knowledge of the transition probabilities.
 - Silent bugs are easy to introduce in this problem.
 - There are subtle ambiguities in the problem statement. For example, while it is clear that the number of cars after a moving, renting, and returning iteration is clipped to 20, it is not clear if this value is limited after moving but before renting / returning. Indeed, in the second plot on p. 81 of Sutton and Barto, the policy says to move one car from location 1 to location 2 when there are 20 cars at both locations, which would mean 21 cars would be at location 2 after the move.

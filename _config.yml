@@ -80,6 +80,11 @@ mathjax:
   enable: true
   # Use the MathJax CDN
   cdn: "https://polyfill.io/v3/polyfill.min.js?features=es6"
+  # Configure MathJax to render inline equations and include AMSmath extension
+  options:
+    tex:
+      inlineMath: [["$", "$"], ['\\(', '\\)']]
+      extensions: ["AMSmath.js"]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
