@@ -10,7 +10,7 @@ One of my goals this year is to learn more about reinforcement learning. To this
 
 From Sutton and Barto, p. 81:
 
-> Jack manages two locations for a nationwide car rental company. Each day, some number of customers arrive at each location to rent cars. If Jack has a car available, he rents it out and is credited \$10 by the national company. If he is out of cars at that location, then the business is lost. Cars become available for renting the day after they are returned. To help ensure that cars are available where they are needed, Jack can move them between the two locations overnight, at a cost of \$2 per car moved. We assume that the number of cars requested and returned at each location are Poisson random variables, meaning that the probability that the number is n is $\frac{\lambda^n}{n!}e^{-\lambda}$, where $\lambda$ is the expected number. Suppose $\lambda$ is 3 and 4 for rental requests at the first and second locations and 3 and 2 for returns. To simplify the problem slightly, we assume that there can be no more than 20 cars at each location (any additional cars are returned to the nationwide company, and thus disappear from the problem) and a maximum of five cars can be moved from one location to the other in one night. We take the discount rate to be $\gamma = 0.9$ and consider the problem of finding the optimal policy for maximizing the expected total reward.
+*Jack manages two locations for a nationwide car rental company. Each day, some number of customers arrive at each location to rent cars. If Jack has a car available, he rents it out and is credited 10 dollars by the national company. If he is out of cars at that location, then the business is lost. Cars become available for renting the day after they are returned. To help ensure that cars are available where they are needed, Jack can move them between the two locations overnight, at a cost of 2 dollars per car moved. We assume that the number of cars requested and returned at each location are Poisson random variables, meaning that the probability that the number is n is $\frac{\lambda^n}{n!}e^{-\lambda}$, where $\lambda$ is the expected number. Suppose $\lambda$ is 3 and 4 for rental requests at the first and second locations and 3 and 2 for returns. To simplify the problem slightly, we assume that there can be no more than 20 cars at each location (any additional cars are returned to the nationwide company, and thus disappear from the problem) and a maximum of five cars can be moved from one location to the other in one night. We take the discount rate to be $\gamma = 0.9$ and consider the problem of finding the optimal policy for maximizing the expected total reward.*
 
 The state is the number of cars at each location. The action is the number of cars to move from one location to the other. The reward is the profit from renting cars minus the cost of moving cars.
 
@@ -19,7 +19,7 @@ We identify the optimal policy using the policy iteration algorithm. We shall be
 
 ### Policy Iteration Algorithm
 
-Letting $\pi(a | s)$ denote the probability of taking action $a$ in state $s$ under policy $\pi$, the state-value function $v_{\pi}(s)$ is the expected return starting from state $s$, and then following policy $\pi$. That is,
+Letting $\pi(a \mid s)$ denote the probability of taking action $a$ in state $s$ under policy $\pi$, the state-value function $v_{\pi}(s)$ is the expected return starting from state $s$, and then following policy $\pi$. That is,
 
 $$v_{\pi}(s) = \mathbb{E}_{\pi}[G_t | S_t = s],$$
 
