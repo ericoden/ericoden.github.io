@@ -65,4 +65,4 @@ After four iterations, we get the optimal policy:
 
 ## Code
 
-
+The code is available in my [GitHub repository](https://github.com/ericoden/ericoden.github.io/blob/main/self_study/reinforcement_learning/ch_04/ex_7/jacks_car_rental.ipynb).
