@@ -51,7 +51,7 @@ We can then iterate between policy evaluation and policy improvement until the p
                 - $v_{\pi}^{n+1}(s) = \sum_{a} \pi(a \mid s) \sum_{s', r} p(s', r \mid s, a)[r + \gamma v_{\pi}^n(s')]$
     2. Policy Improvement:
         1. For each $s$:
-            1. $\pi'(s) = \arg\max_a \sum_{s', r} p(s', r \mid s, a)[r + \gamma v_{\pi}(s')]$
+            - $\pi'(s) = \arg\max_a \sum_{s', r} p(s', r \mid s, a)[r + \gamma v_{\pi}(s')]$
         2. If $\pi' = \pi$, then stop, policy has converged.
         3. $\pi = \pi'$
 
