@@ -36,9 +36,9 @@ Provided a policy $\pi$, we can convert this into an iterative algorithm to find
 
 $$v_{\pi}^{n+1}(s) = \sum_{a} \pi(a|s) \sum_{s', r} p(s', r|s, a)[r + \gamma v_{\pi}^n(s')]$$
 
-until $max_s \lvert v_{\pi}^{n+1}(s) - v_{\pi}^n(s) \rvert < \theta$ for some small $\theta$. This is called **iterative policy evaluation**, as it evaluates the value of the policy at each state.
+until $\max_s \lvert v_{\pi}^{n+1}(s) - v_{\pi}^n(s) \rvert < \theta$ for some small $\theta$. This is called **iterative policy evaluation**, as it evaluates the value of the policy at each state.
 
-Once we have the value function $v_{\pi}$, we can use it to improve the policy by acting greedily with respect to it. Explicitly, we can define a new policy $\pi'$ such that $\pi'(s) = \text{argmax}_a \sum_{s', r} p(s', r | s, a)[r + \gamma v_{\pi}(s')]$. This is called **policy improvement**. This new policy is guaranteed to be as good as or better than the old policy (with respect to the value function $v_{\pi}$).
+Once we have the value function $v_{\pi}$, we can use it to improve the policy by acting greedily with respect to it. Explicitly, we can define a new policy $\pi'$ such that $\pi'(s) = argmax_a \sum_{s', r} p(s', r | s, a)[r + \gamma v_{\pi}(s')]$. This is called **policy improvement**. This new policy is guaranteed to be as good as or better than the old policy (with respect to the value function $v_{\pi}$).
 
 We can then iterate between policy evaluation and policy improvement until the policy converges. This is called **policy iteration**. The pseudocode is as follows:
 
