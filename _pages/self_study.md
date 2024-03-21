@@ -37,4 +37,5 @@ My solutions to textbook exercises.
 ### [Reinforcement Learning](https://mitpress.mit.edu/9780262039246/reinforcement-learning/) by Richard S. Sutton and Andrew G. Barto
 
 2 - [Multi-armed Bandits](/self_study/reinforcement_learning/ch_02_multi-armed_bandits.html) \
-3 - Finite Markov Decision Processes
+3 - [Finite Markov Decision Processes](/self_study/reinforcement_learning/ch_03_finite_markov_decision_processes.html) \
+4 - Dynamic Programming
